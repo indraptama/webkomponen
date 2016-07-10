@@ -1,0 +1,27 @@
+
+/* =========================
+ * Base
+ * =========================
+ */
+
+@import "suitcss-base";
+
+
+/**
+  CSS Variables and Media Queries
+*/
+
+@import "./css/_variables.css";
+@import "./css/_media-queries.css";
+
+/* start impoting components */
+@import "./components/stepcard/StepCard.css";
+
+
+html {
+  background-color: #f3f3f3;
+}
+
+img {
+  vertical-align: middle;
+}

@@ -1,0 +1,121 @@
+/* ==========================================================================
+   Step Card
+   ========================================================================== */
+
+.StepCard {
+  background-color: #fff;
+  border-radius: 4px;
+  margin-bottom: calc(var(--base-spacing-unit) * 1);
+  position: relative;
+  border-radius: 4px;
+  position: relative;
+}
+
+.StepCard-container {
+  overflow: hidden;
+  position: relative;
+}
+
+.StepCard-img {
+  overflow: hidden;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+}
+
+.StepCard-img img {
+  height: auto;
+  max-width: 100%;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.StepCard-number {
+  color: yellow;
+  font-size: 480px;
+  font-weight: 700;
+  left: 0;
+  line-height: 0;
+  margin: 0;
+  opacity: .75;
+  padding: 0;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+}
+
+.StepCard-body {
+  background-color: #fff;
+  padding: calc(var(--base-spacing-unit)/1);
+  position: relative;
+  z-index: 3;
+}
+
+.StepCard-title {
+
+}
+
+.StepCard-desc {
+
+}
+
+
+@media (--md-viewport) {
+  .StepCard {
+    display: table;
+  }
+
+  .StepCard-img {
+    display: table-cell;
+    width: 50%;
+    vertical-align: middle;
+  }
+
+  .StepCard-body {
+    display: table-cell;
+    width: 50%;
+    vertical-align: middle;
+  }
+}
+
+
+@media (--lg-viewport) {
+  .StepCard {
+    display: table;
+  }
+
+  .StepCard-img {
+    display: table-cell;
+    width: 50%;
+    vertical-align: middle;
+  }
+
+  .StepCard-body {
+    display: table-cell;
+    width: 50%;
+    vertical-align: middle;
+  }
+}
+
+/**
+ * Modifer
+ */
+
+.StepCard--floatShadow {
+  position: relative;
+}
+
+.StepCard--floatShadow:before {
+  bottom: 0;
+  box-shadow: 0 0px 50px 0px rgba(0, 0, 0, 0.4);
+  content: "";
+  display: block;
+  height: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translateX(-50%);
+  width: 80%;
+  z-index: -1;
+}
