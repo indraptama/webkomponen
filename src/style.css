@@ -16,7 +16,7 @@
 
 /* start impoting components */
 @import "./components/stepcard/StepCard.css";
-
+@import "./components/productthumb/ProductThumb.css";
 
 html {
   background-color: #f3f3f3;
@@ -24,4 +24,17 @@ html {
 
 img {
   vertical-align: middle;
+}
+
+
+hr {
+  margin-top: var(--base-spacing-unit);
+  margin-bottom: var(--base-spacing-unit);
+  height: 10px;
+	border: 0;
+	box-shadow: 0 10px 10px -10px #8c8b8b inset;
+}
+
+.Title-component {
+  margin-bottom: var(--base-spacing-unit);
 }

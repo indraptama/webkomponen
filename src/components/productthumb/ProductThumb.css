@@ -1,0 +1,97 @@
+.ProductThumb {
+  max-width: 206px;
+  height: 300px;
+  display: inline-block;
+  text-decoration: none;
+  position: relative;
+  margin: calc(var(--base-spacing-unit)/8);
+}
+
+.ProductThumb a {
+  text-decoration: none;
+  color: inherit;
+
+}
+
+.ProductThumb a:hover {
+  text-decoration: underline;
+}
+
+.ProductThumb:before {
+  bottom: 0;
+  box-shadow: 0 0px 0px 0px rgba(0, 0, 0, 0.15);
+  content: "";
+  display: block;
+  height: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translateX(-50%);
+  width: 70%;
+  z-index: -1;
+  transition: box-shadow 200ms ease;
+}
+
+/* hover animation */
+
+.ProductThumb:hover,
+.ProductThumb:focus {
+
+}
+
+.ProductThumb:hover:before,
+.ProductThumb:focus:before {
+  box-shadow: 0 0px 50px 0px rgba(0, 0, 0, 0.55);
+  transition: box-shadow 150ms ease;
+}
+
+/*
+   ProductThumb components
+   ========================================================================== */
+
+.ProductThumb-container {
+  max-width: 206px;
+  height: 300px;
+  position: relative;
+  overflow: hidden;
+  background-color: #fff;
+  border-radius: 4px;
+}
+
+.ProductThumb-img {
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+}
+
+.ProductThumb-img a {
+  display: block;
+}
+
+.ProductThumb-img img{
+  max-width: 100%;
+  visibility: hidden;
+}
+
+.ProductThumb-body {
+  padding: calc(var(--base-spacing-unit)/2);
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.ProductThumb-brand {
+  font-size: 0.75rem;
+  line-height: 1;
+  opacity: 0.65;
+}
+
+.ProductThumb-name {
+  font-size: 0.875rem;
+  line-height: 1.7142857143;
+  font-weight: 700;
+}
+
+.ProductThumb-price {
+  font-size: 0.875rem;
+  line-height: 1;
+}
