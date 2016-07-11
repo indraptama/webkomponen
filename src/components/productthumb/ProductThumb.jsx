@@ -1,3 +1,16 @@
+/**
+usage example:
+  <ProductThumb
+    brand="Marina Vapes"
+    name="That Thai Thea Tho"
+    price="50000"
+    img="img/juice.jpg"
+    link="index.html"
+    linkBrand="#"
+  ></ProductThumb>
+*/
+
+
 import React from 'react';
 
 const ProductThumb = ({brand,name,price,img,link,linkBrand}) => {
@@ -10,7 +23,8 @@ const ProductThumb = ({brand,name,price,img,link,linkBrand}) => {
     <div href={link} className="ProductThumb">
       <div className="ProductThumb-container">
         <div className="ProductThumb-img" style={imgStyle}>
-          <a href={link}>
+          <div className="ProductThumb-imgRatio"></div>
+          <a className="ProductThumb-imgContent" href={link}>
             <img src={img} />
           </a>
         </div>

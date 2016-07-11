@@ -19,7 +19,9 @@
   "dependencies": {
     "react": "^15.2.1",
     "react-dom": "^15.2.1",
-    "suitcss-base": "^2.0.0"
+    "suitcss-base": "^2.0.0",
+    "suitcss-components-grid": "^3.0.3",
+    "suitcss-utils-size": "^2.0.0"
   },
   "devDependencies": {
     "autoprefixer": "^6.3.7",

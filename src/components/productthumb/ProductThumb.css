@@ -1,10 +1,16 @@
+:root {
+  --product-thumb-width: 256px;
+  --product-img-width: 100%;
+  --product-img-height: 256px;
+}
+
+
 .ProductThumb {
-  max-width: 206px;
-  height: 300px;
+  max-width: var(--product-thumb-width);
   display: inline-block;
   text-decoration: none;
   position: relative;
-  margin: calc(var(--base-spacing-unit)/8);
+  z-index: 1;
 }
 
 .ProductThumb a {
@@ -49,8 +55,6 @@
    ========================================================================== */
 
 .ProductThumb-container {
-  max-width: 206px;
-  height: 300px;
   position: relative;
   overflow: hidden;
   background-color: #fff;
@@ -64,6 +68,8 @@
 }
 
 .ProductThumb-img a {
+  max-width: var(--product-img-width);
+  height: var(--product-img-height);
   display: block;
 }
 
@@ -74,7 +80,6 @@
 
 .ProductThumb-body {
   padding: calc(var(--base-spacing-unit)/2);
-  position: absolute;
   bottom: 0;
   width: 100%;
 }

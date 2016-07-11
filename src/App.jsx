@@ -23,7 +23,7 @@ export default class Apps extends React.Component {
           brand="Marina Vapes"
           name="That Thai Thea Tho"
           price="50000"
-          img="http://lcdn.westcoastvapesupply.com/801AA8F/westcoastvapesupply/prodImages/lrg_img_2003.jpg"
+          img="img/juice.jpg"
           link="index.html"
           linkBrand="#"
         ></ProductThumb>
