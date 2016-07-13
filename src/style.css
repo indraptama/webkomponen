@@ -20,7 +20,14 @@
 
 @import "./components/stepcard/StepCard.css";
 @import "./components/productthumb/ProductThumb.css";
+@import "./components/productthumb2/ProductThumb2.css";
 
+
+
+
+
+
+/* Basic HTML STYTLE */
 html {
   background-color: #f3f3f3;
 }
@@ -29,6 +36,10 @@ img {
   vertical-align: middle;
 }
 
+.container {
+  max-width: 960px;
+  margin: auto;
+}
 
 hr {
   margin-top: var(--base-spacing-unit);
