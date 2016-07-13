@@ -1,0 +1,43 @@
+.ProductThumb2 {
+  background-color: #fff;
+}
+
+.ProductThumb2-container {
+  overflow: hidden;
+}
+
+.ProductThumb2-img {
+  display: block;
+}
+
+.ProductThumb2-img img {
+  max-width: 100%;
+  height: auto;
+}
+
+.ProductThumb2-body {
+  display: table;
+  width: 100%;
+}
+
+.ProductThumb2-desc {
+  display: table-cell;
+  width: calc(100% - 44px);
+}
+
+.ProductThumb2-brand {
+  font-size: 0.75rem;
+  opacity: 0.75;
+}
+
+.ProductThumb2-title {
+
+}
+
+.ProductThumb2-price {
+  display: inline-block;
+}
+
+.ProductThumb2-action {
+  display: table-cell;
+}

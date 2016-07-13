@@ -4,23 +4,23 @@
  * =========================
  */
 
-@import "suitcss-base";
+@import 'suitcss-base';
 
 
 /**
   CSS Variables and Media Queries
 */
 
-@import "./css/_variables.css";
-@import "./css/_media-queries.css";
+@import './css/_variables.css';
+@import './css/_media-queries.css';
 
 /* start impoting components */
-@import "suitcss-components-grid";
-@import "suitcss-utils-size";
+@import 'suitcss-components-grid';
+@import 'suitcss-utils-size';
 
-@import "./components/stepcard/StepCard.css";
-@import "./components/productthumb/ProductThumb.css";
-@import "./components/productthumb2/ProductThumb2.css";
+@import './components/stepcard/StepCard.css';
+@import './components/productthumb/ProductThumb.css';
+@import './components/productthumb2/ProductThumb2.css';
 
 
 
@@ -28,37 +28,48 @@
 
 
 /* Basic HTML STYTLE */
-html {
-  background-color: #f3f3f3;
+html
+{
+    background-color: #f3f3f3;
 }
 
-img {
-  vertical-align: middle;
+img
+{
+    vertical-align: middle;
 }
 
-.container {
-  max-width: 960px;
-  margin: auto;
+.container
+{
+    max-width: 960px;
+    margin: auto;
+    padding-right: 1rem;
+    padding-left: 1rem;
 }
 
-hr {
-  margin-top: var(--base-spacing-unit);
-  margin-bottom: var(--base-spacing-unit);
-  border: 1px solid #ccc;
+hr
+{
+    margin-top: var(--base-spacing-unit);
+    margin-bottom: var(--base-spacing-unit);
+
+    border: 1px solid #ccc;
 }
 
-.Title-component {
-  margin-bottom: var(--base-spacing-unit);
+.Title-component
+{
+    margin-bottom: var(--base-spacing-unit);
 }
 
-.bg-white {
-  background-color: #f3f3f3;
+.bg-white
+{
+    background-color: #f3f3f3;
 }
 
-.bg-gray {
-  background-color: #eaeaea;
+.bg-gray
+{
+    background-color: #eaeaea;
 }
 
-.u-textCenter {
-  text-align: center;
+.u-textCenter
+{
+    text-align: center;
 }

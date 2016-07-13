@@ -39,7 +39,12 @@ module.exports = {
         test: /\.css/,
         include: path.join(__dirname, 'src'),
         // loader: ExtractTextPlugin.extract('style', 'css!postcss'),
-        loader: 'style!css!postcss',
+        // loader: 'style!css!postcss',
+        loaders: [
+        'style',
+        'css?modules&importLoaders=1&localIdentName=[path]___[name]__[local]___[hash:base64:5]',
+        'postcss',
+        ]
       },
       {
         test: /\.json$/,
